@@ -9,6 +9,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  go_router_linter: ^0.1.9
   riverpod_lint: ^2.6.5
   very_good_analysis: ^9.0.0
 
