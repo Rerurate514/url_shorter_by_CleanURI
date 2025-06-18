@@ -9,6 +9,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  freezed: ^3.0.6
   go_router_linter: ^0.1.9
   riverpod: ^2.6.1
   riverpod_lint: ^2.6.5
