@@ -10,18 +10,19 @@ dependencies:
   flutter:
     sdk: flutter
   freezed: ^3.0.6
-  go_router_linter: ^0.1.9
   import_path_converter: ^1.0.1
   import_sorter: ^4.6.0
+  json_serializable: ^6.9.5
   riverpod: ^2.6.1
-  riverpod_lint: ^2.6.5
-  very_good_analysis: ^9.0.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^5.0.0
   build_runner: ^2.5.2
+  flutter_lints: ^5.0.0
+  riverpod_lint: ^2.6.5
+  very_good_analysis: ^9.0.0
+  go_router_linter: ^0.1.9
 
 flutter:
   uses-material-design: true
