@@ -10,6 +10,7 @@ dependencies:
   dio: ^5.8.0+1
   flutter:
     sdk: flutter
+  flutter_riverpod: ^2.6.1
   freezed: ^3.0.6
   freezed_annotation: ^3.0.0
   import_path_converter: ^1.0.1
