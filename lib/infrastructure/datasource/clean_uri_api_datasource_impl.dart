@@ -1,7 +1,19 @@
 import 'package:dio/dio.dart';
+import 'package:riverpod/riverpod.dart';
+import 'package:riverpod_annotation/riverpod_annotation.dart';
 import 'package:url_shorter_by_cleanuri/core/exception/network_exception.dart';
-import 'package:url_shorter_by_cleanuri/infrastructure/datasource/clean_uri_api_datasource.dart';
+import 'package:url_shorter_by_cleanuri/core/utils/dio.dart';
+import 'package:url_shorter_by_cleanuri/infrastructure/datasource/clean_uri_api_datasource.dart';  
 import 'package:url_shorter_by_cleanuri/infrastructure/model/short_url_response.dart';
+
+part 'clean_uri_api_datasource_impl.g.dart';
+
+@riverpod
+CleanUriApiDatasourceImpl cleanUriApiDatasourceImpl(Ref ref) {
+  return CleanUriApiDatasourceImpl(
+    dio: ref.watch(dioProvider),
+  );
+}
 
 class CleanUriApiDatasourceImpl implements CleanUriApiDatasource {
   final Dio _dio;
