@@ -8,7 +8,7 @@ import 'package:url_shorter_by_cleanuri/infrastructure/repository/short_url_repo
 part 'get_short_url_usecase_impl.g.dart';
 
 @riverpod
-GetShortUrlUsecaseImpl getShortUrlUsecaseImplU(Ref ref) {
+GetShortUrlUsecaseImpl getShortUrlUsecaseImpl(Ref ref) {
   return GetShortUrlUsecaseImpl(
     shortUrlRepository: ref.watch(shortUrlRepositoryImplProvider) 
   );
