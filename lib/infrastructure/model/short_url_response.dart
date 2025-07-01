@@ -7,7 +7,8 @@ part 'short_url_response.g.dart';
 sealed class ShortUrlResponse with _$ShortUrlResponse {
 
     const factory ShortUrlResponse({
-    required String url
+    // ignore: non_constant_identifier_names
+    required String result_url
   }) = _ShortUrlResponse;
 
   factory ShortUrlResponse.fromJson(Map<String, dynamic> json) => _$ShortUrlResponseFromJson(json);
